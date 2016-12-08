@@ -17,16 +17,11 @@ python demo.py
 
 一个简单的例子
 ====
-# -*- coding=utf-8 -*-
-import urllib,urllib2
-import json
-from settings import *
-from profiler import Capability
-
 #继承Capability类导入压测时需要使用到的一些属性
 class Website(Capability):
     def __init__(self,increment,final):
         Capability.__init__(self,increment,final)
+
 
 #使用装饰器把目标函数包装成可并发的函数
     @Capability.concurrent()
@@ -39,11 +34,14 @@ class Website(Capability):
         with self:
             response = urllib2.urlopen(request).read()
 
+#开始运行
 if __name__ == '__main__':
     web = Website(1,3)
     web.run_detail()
 
-下面是程序的输出：
+
+#下面是程序的输出：
+
 Visit:https://www.baidu.com/
 当前并发：1
 最小响应时间:0.173840

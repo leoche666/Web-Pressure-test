@@ -35,8 +35,8 @@ Capability.__init__(self,increment,final)
             response = urllib2.urlopen(request).read()
 
 #开始运行
-web = Website(1,3)
-web.run_detail()
+web = Website(1,3)  
+web.run_detail()  
 
 
 #下面是程序的输出:  

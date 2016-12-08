@@ -19,9 +19,7 @@ python demo.py
 ====
 
 #继承Capability类导入压测时需要使用到的一些属性
-class Website(Capability):
-    def __init__(self,increment,final):
-        Capability.__init__(self,increment,final)
+Capability.__init__(self,increment,final)
 
 
 
@@ -37,9 +35,8 @@ class Website(Capability):
             response = urllib2.urlopen(request).read()
 
 #开始运行
-if __name__ == '__main__':
-    web = Website(1,3)
-    web.run_detail()
+web = Website(1,3)
+web.run_detail()
 
 
 #下面是程序的输出:  
@@ -51,14 +48,14 @@ Visit:https://www.baidu.com/
 并发总时间:1.015974  
 并发总平均时间:1.015974  
 最小TPS:1  
-最大TPS:1 
-平均TPS:1.000000
-错误率:0.000000
+最大TPS:1  
+平均TPS:1.000000  
+错误率:0.000000  
 
 Visit:https://www.baidu.com/  
 Visit:https://www.baidu.com/  
 当前并发：2  
-最小响应时间:0.047717 
+最小响应时间:0.047717  
 最大响应时间:0.051873  
 平均响应时间（RT）:0.049795  
 并发总时间:1.003607  

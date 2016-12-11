@@ -82,3 +82,9 @@ Visit:https://www.baidu.com/
 ![image](https://github.com/leoche666/Web-Pressure-test/blob/master/img-folder/image1.png)
 
 ![image](https://github.com/leoche666/Web-Pressure-test/blob/master/img-folder/image2.png)
+
+代码详细说明
+====
+http://note.youdao.com/noteshare?id=4e717678d9dd6f47d974e6aa090ec4df
+
+http://note.youdao.com/noteshare?id=282fb6d468e33970b3aa151bc7176d2f
